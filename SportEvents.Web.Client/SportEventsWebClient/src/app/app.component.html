@@ -1,0 +1,8 @@
+<div class="events-container">
+  <div class="text-right">
+    <button routerLink="/{{this.buttonText}}" (click)="changeEventMode()" class="events-mode-button">{{this.buttonText}} Mode</button>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>

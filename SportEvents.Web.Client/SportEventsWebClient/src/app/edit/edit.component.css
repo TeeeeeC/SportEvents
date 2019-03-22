@@ -1,0 +1,29 @@
+.events-edit-table, .events-edit-table tbody, .events-edit-table tr {
+  display: block;
+}
+
+.events-edit-table {
+  font-size: 12px;
+}
+
+.events-edit-table-col {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1px;
+  text-align: center;
+  height: 26px;
+  line-height: 26px;
+}
+
+.create-event-button {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.delete-event-button, .update-event-button {
+  cursor: pointer;
+}
+
+.event-input-column-width {
+  width: 98%;
+}

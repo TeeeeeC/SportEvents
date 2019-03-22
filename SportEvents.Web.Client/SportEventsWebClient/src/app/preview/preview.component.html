@@ -1,0 +1,24 @@
+<table class="events-preview-table">
+  <tbody>
+    <tr>
+      <th class="events-preview-table-col">EventName</th>
+      <th class="events-preview-table-col">OddsForFirstTeam</th>
+      <th class="events-preview-table-col">OddsForDraw</th>
+      <th class="events-preview-table-col">OddsForSecondTeam</th>
+      <th class="events-preview-table-col">EventStartDate in UTC</th>
+    </tr>
+    <tr *ngFor="let event of events" class="events-preview-body-row" [ngClass]="getClassByStartDate(event.eventStartDate)">
+      <td class="events-preview-table-col">{{event.eventName || "-"}}</td>
+      <td class="events-preview-table-col" (click)="printOdd(event.eventID, 'OddsForFirstTeam', event.oddsForFirstTeam)">
+        {{(event.oddsForFirstTeam | number : '1.2-2') || "-"}}
+      </td>
+      <td class="events-preview-table-col" (click)="printOdd(event.eventID, 'OddsForDraw', event.oddsForDraw)">
+        {{(event.oddsForDraw | number : '1.2-2') || "-"}}
+      </td>
+      <td class="events-preview-table-col" (click)="printOdd(event.eventID, 'OddsForSecondTeam', event.oddsForSecondTeam)">
+        {{(event.oddsForSecondTeam | number : '1.2-2') || "-"}}
+      </td>
+      <td class="events-preview-table-col">{{event.eventStartDate | date: 'dd/MM/yyyy HH:mm'}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,13 @@
+.events-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.events-mode-button {
+  cursor: pointer;
+  margin: 15px 0;
+}

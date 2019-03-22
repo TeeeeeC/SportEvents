@@ -1,0 +1,27 @@
+.events-preview-table, .events-preview-table tbody, .events-preview-table tr {
+  display: block;
+}
+
+.events-preview-table {
+  font-size: 12px;
+}
+
+.events-preview-table-col {
+  width: calc(20% - 6px);
+  display: inline-block;
+  border: 1px solid black;
+  margin: 1px;
+  text-align: center;
+}
+
+.events-preview-body-row:nth-child(even) td {
+  background-color: AliceBlue;
+}
+
+.events-preview-body-row:nth-child(odd) td {
+  background-color: HoneyDew;
+}
+
+.events-preview-body-row.event-expired td {
+  background-color: LightSalmon;
+}
